@@ -11,6 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <!-- Custom Sctoll -->
+    <link rel="stylesheet" href="js/scroll/jquery.mCustomScrollbar.css" />
     <!-- Custom Fonts -->
     <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -153,13 +155,13 @@
     <!--/.container-fluid -->
   </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid mt70">
         <div id="main_area">
             <!-- Slider -->
             <div class="row">
 			<div class="gap"></div>
-                <div class="col-xs-12 col-md-3">
-                    <div class="col-sm-12 response_pro">
+                <div class="col-md-3">
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -169,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 response_pro">
+                    <div class=" response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -179,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 response_pro">
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -193,6 +195,7 @@
 
 
                 <div class="col-xs-12 col-md-6" id="slider" style="margin-top:50px;">
+                   <div class="mCustomScrollbar _mCS_1 mCS-autoHide middlecontent" data-mcs-theme="dark">
                     <!-- Top part of the slider -->
                     <div class="row">
                         <div class="col-sm-12">
@@ -245,9 +248,10 @@
                         </div>
 
                     </div>
+					</div>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <div class="col-sm-12 response_pro">
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -257,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 response_pro">
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -267,7 +271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 response_pro">
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -281,7 +285,7 @@
             </div><!--/Slider-->
         </div>
     </div>
-      <footer>
+      <footer class="fixed-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -300,11 +304,30 @@
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Sctoll -->
+    <script src="js/scroll/jquery.mCustomScrollbar.js"></script>
     <!-- Script to Activate the Carousel -->
-    <script>
+    <script type="text/javascript">
         $('.carousel').carousel({
             interval: 5000 //changes the speed
         })
     </script>
+    <script type="text/javascript">
+        $('.carousel1').carousel({
+            interval: 5000 //changes the speed
+        })
+    </script>
+    
+    <script>
+    (function($){
+			$(window).on("load",function(){
+				
+				$("body").mCustomScrollbar({
+					theme:"minimal"
+				});
+				
+			});
+		})(jQuery);
+</script>
 </body>
 </html>

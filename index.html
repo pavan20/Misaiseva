@@ -11,7 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-    
+    <!-- Custom Sctoll -->
+    <link rel="stylesheet" href="js/scroll/jquery.mCustomScrollbar.css" />
 </head>
 <body>
     <!-- Navigation -->
@@ -150,13 +151,25 @@
     </div>
     <!--/.container-fluid -->
   </nav>
-    <div class="container-fluid">
+   
+    <div class="container-fluid mt70">
         <div id="main_area">
             <!-- Slider -->
             <div class="row">
+               
                 <div class="col-xs-12 col-md-3">
 				<div class="gap"></div>
-                    <div class="col-sm-12 response_pro">
+                    <div class="response_pro">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, numquam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -166,17 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 response_pro">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 response_pro">
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -187,12 +190,15 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div class="col-xs-12 col-md-6" id="slider">
+				
+				
+				<div class="col-xs-12 col-md-6">
+              <div class="row">
+               <div class="mCustomScrollbar _mCS_1 mCS-autoHide middlecontent" data-mcs-theme="dark">
+                <div id="slider">
                     <!-- Top part of the slider -->
-                    <div class="">
-                        <div class="col-sm-12 col-xs-12" id="carousel-bounding-box">
+                    <div class="row">
+                        <div id="carousel-bounding-box">
                             <div class="carousel slide" id="myCarousel">
                                 <!-- Carousel items -->
                                 <div class="carousel-inner">
@@ -217,7 +223,7 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="col-lg-12 col-xs-12" style="margin-top:10px;">
+                        <div style="margin-top:10px;">
                             <div class="well text-center">
                                 LIFE IS A SONG - SING IT. LIFE IS A GAME - PLAY IT. LIFE IS A CHALLENGE - MEET IT. LIFE IS A DREAM - REALIZE IT. LIFE IS A SACRIFICE - OFFER IT. LIFE IS LOVE - ENJOY IT.
                             </div>
@@ -225,7 +231,7 @@
 
                         <div class="clearfix"></div>
 
-                        <div class="col-sm-12 col-xs-12" id="carousel-bounding-box">
+                        <div id="carousel-bounding-box">
                             <div class="carousel slide" id="myCarousel1">
                                 <!-- Carousel items -->
                                 <div class="carousel-inner">
@@ -249,10 +255,13 @@
                         </div>
                     </div>
                 </div>
-
+					</div>
+					</div>
+				</div>
+				
 
                 <div class="col-md-3 col-xs-12">
-                    <div class="col-sm-12 response_pro">
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i> Lorem ipsum</h4>
@@ -262,7 +271,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 response_pro">
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -272,7 +281,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 response_pro">
+                    <div class="response_pro">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4><i class="fa fa-fw fa-check"></i>Lorem ipsum</h4>
@@ -283,10 +292,11 @@
                         </div>
                     </div>
                 </div>
+                
             </div><!--/Slider-->
         </div>
     </div>
-    <footer>
+    <footer class="fixed-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
@@ -305,6 +315,8 @@
     </footer>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Sctoll -->
+    <script src="js/scroll/jquery.mCustomScrollbar.js"></script>
     <!-- Script to Activate the Carousel -->
     <script type="text/javascript">
         $('.carousel').carousel({
@@ -316,5 +328,17 @@
             interval: 5000 //changes the speed
         })
     </script>
+    
+    <script>
+    (function($){
+			$(window).on("load",function(){
+				
+				$("body").mCustomScrollbar({
+					theme:"minimal"
+				});
+				
+			});
+		})(jQuery);
+</script>
 </body>
 </html>

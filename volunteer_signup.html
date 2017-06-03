@@ -11,6 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <!-- Custom Sctoll -->
+    <link rel="stylesheet" href="js/scroll/jquery.mCustomScrollbar.css" />
     <!-- Custom Fonts -->
     <!--<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -138,7 +140,7 @@
         <!-- Marketing Icons Section -->
         <div class="row">
 
-            <footer>
+            <footer class="fixed-footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
@@ -169,11 +171,30 @@
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Sctoll -->
+    <script src="js/scroll/jquery.mCustomScrollbar.js"></script>
     <!-- Script to Activate the Carousel -->
-    <script>
+    <script type="text/javascript">
         $('.carousel').carousel({
             interval: 5000 //changes the speed
         })
     </script>
+    <script type="text/javascript">
+        $('.carousel1').carousel({
+            interval: 5000 //changes the speed
+        })
+    </script>
+    
+    <script>
+    (function($){
+			$(window).on("load",function(){
+				
+				$("body").mCustomScrollbar({
+					theme:"minimal"
+				});
+				
+			});
+		})(jQuery);
+</script>
 </body>
 </html>
